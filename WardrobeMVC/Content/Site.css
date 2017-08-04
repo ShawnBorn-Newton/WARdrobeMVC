@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('Images/forest.jpg');
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -28,7 +29,20 @@ textarea {
     margin:0px;
     padding:0px;
 }
-
+/*Jumbotron*/
+.jumbotron {
+    background-image: url('Images/knights_of_bretonnia_by_ethicallychallenged-db1hixk.jpg');
+    opacity: .80;
+    margin-top:50px;
+    color:gold;
+    height:500px;
+}
+#backDrop{
+    background-color:black;
+    opacity:.80;
+    width:570px;
+    text-align:center;
+}
 /*Carousel*/
 
 .btn-vertical-slider{ margin-left:35px; cursor:pointer;}
@@ -68,4 +82,25 @@ a {  cursor:pointer;}
 
  .carousel.vertical .item {
     left: 0;
+}
+ .outfitBack{
+     background-color:black;
+     color:gold;
+     opacity:.85;
+ }
+
+ /*General*/
+ #thumbBackColor{
+     background-color:black;
+     opacity:.80;
+     color:gold;
+     border:0;
+     margin:0px;
+     padding:0px;
+ }
+.button{
+    background-color:black;
+    width:auto;
+    text-align:center;
+    opacity:.80;
 }

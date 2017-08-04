@@ -6,26 +6,15 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-@*@foreach (var item in Model) {
-    <div class="thumbnail">
-        <img src="@Url.Content(item.Top.Photo)" />
-        <img src="@Url.Content(item.Bottom.Photo)" />
-        <img src="@Url.Content(item.Sho.Photo)" />
-        <img src="@Url.Content(item.Accessory.Photo)" />
-        <p>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
-        </p>
-    </div>
-}*@
+<div>
+    <button class="button btn-lg">
+        <a href="http://localhost:63648/Outfits/Create">Create</a>
+    </button>
+</div>
 @foreach (var item in Model)
 {
 <div class="container">
-    <div class="row well">
+    <div class="row well outfitBack">
         <div class="col-xs-8 col-sm-6 col-md-6">
             <div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
                 <div class="row">
@@ -121,24 +110,9 @@
         </div>
     </div>
 </div>
-<p>
+<p class="button">
     @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
     @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
     @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
 </p>
 }
-@*<script>
-$(document).ready(function () {
-
-    $('.btn-vertical-slider').on('click', function () {
-
-        if ($(this).attr('data-slide') == 'next') {
-            $('#myCarousel').carousel('next');
-        }
-        if ($(this).attr('data-slide') == 'prev') {
-            $('#myCarousel').carousel('prev')
-        }
-
-    });
-});
-</script>*@

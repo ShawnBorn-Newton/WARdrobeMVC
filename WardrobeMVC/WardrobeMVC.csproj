@@ -214,9 +214,11 @@
     <Content Include="Content\Images\ChainGreaves.jpg" />
     <Content Include="Content\Images\ClothGreaves.png" />
     <Content Include="Content\Images\F1.jpg" />
+    <Content Include="Content\Images\forest.jpg" />
     <Content Include="Content\Images\Gauntlet.jpg" />
     <Content Include="Content\Images\HardLeatherGreaves.jpg" />
     <Content Include="Content\Images\HardLeatherTop.jpg" />
+    <Content Include="Content\Images\knights_of_bretonnia_by_ethicallychallenged-db1hixk.jpg" />
     <Content Include="Content\Images\LeatherBoots.png" />
     <Content Include="Content\Images\Leather_Jerkin2.jpg" />
     <Content Include="Content\Images\MailShirt.jpg" />

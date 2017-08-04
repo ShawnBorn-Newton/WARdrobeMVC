@@ -6,12 +6,14 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<<div>
+    <button class="button btn-lg">
+        <a href="http://localhost:63648/Shoes/Create">Create</a>
+    </button>
+</div>
 
 @foreach (var item in Model) {
-    <div class="col-md-4 col-sm-6 thumbnail">
+    <div class="col-md-4 col-sm-6 thumbnail" id="thumbBackColor">
         <img src="@Url.Content(item.Photo)" />
         <h3>
             @Html.DisplayFor(modelItem => item.Name)
