@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="18eb8d909eaf40f58502f91e7c24310f" Name="Diagram1">
+        <EntityTypeShape EntityType="WardrobeMVCModel.Accessory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Bottom" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Outfit" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Season" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Sho" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.Top" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WardrobeMVCModel.sysdiagram" Width="1.5" PointX="7.375" PointY="0.75" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Accessories_Seasons" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Accessories" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Bottoms_Seasons" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Bottoms" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Shoes" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Outfits_Tops" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Shoes_Seasons" />
+        <AssociationConnector Association="WardrobeMVCModel.FK_Tops_Seasons" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

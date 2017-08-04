@@ -1,0 +1,144 @@
+﻿@model IEnumerable<WardrobeMVC.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@*@foreach (var item in Model) {
+    <div class="thumbnail">
+        <img src="@Url.Content(item.Top.Photo)" />
+        <img src="@Url.Content(item.Bottom.Photo)" />
+        <img src="@Url.Content(item.Sho.Photo)" />
+        <img src="@Url.Content(item.Accessory.Photo)" />
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OutfitID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OutfitID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OutfitID })
+        </p>
+    </div>
+}*@
+@foreach (var item in Model)
+{
+<div class="container">
+    <div class="row well">
+        <div class="col-xs-8 col-sm-6 col-md-6">
+            <div id="myCarousel" class="vertical-slider carousel vertical slide col-md-12" data-ride="carousel">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span data-slide="next" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-up "
+                              style="font-size: 30px"></span>
+                    </div>
+                    <div class="col-md-8">
+                    </div>
+                </div>
+                <br />
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5 col-md-5">
+                                <a href="http://localhost:63648/Tops">
+                                    <img src="@Url.Content(item.Top.Photo)" class="thumbnail"
+                                         alt="Image" />
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-7 col-md-7">
+                                
+                                <h4>@Html.DisplayFor(modelItem => item.Top.Name)</h4>
+                                <h6>@Html.DisplayFor(modelItem => item.Top.Season.Name)</h6>
+                                <h6>@Html.DisplayFor(modelItem => item.Top.Occacion)</h6>
+</div>
+                        </div>
+                        <!--/row-fluid-->
+                    </div>
+                    <!--/item-->
+                    <div class="item ">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5 col-md-5">
+                                <a href="http://localhost:63648/Bottoms/">
+                                    <img src="@Url.Content(item.Bottom.Photo)" class="thumbnail"
+                                         alt="Image" />
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-7 col-md-7">
+                                <h4>@Html.DisplayFor(modelItem => item.Bottom.Name)</h4>
+                                <h6>@Html.DisplayFor(modelItem => item.Bottom.Season.Name)</h6>
+                                <h6>@Html.DisplayFor(modelItem => item.Bottom.Occasion)</h6>
+                            </div> 
+                        </div>
+                        <!--/row-fluid-->
+                    </div>
+                    <!--/item-->
+                    <div class="item ">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5 col-md-5">
+                                <a href="http://localhost:63648/Shoes">
+                                    <img src="@Url.Content(item.Sho.Photo)" class="thumbnail"
+                                         alt="Image" />
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-7 col-md-7">
+                                <h4>@Html.DisplayFor(modelItem => item.Sho.Name)</h4>
+                                <h6>@Html.DisplayFor(modelItem => item.Sho.Season.Name)</h6>
+                                <h6>@Html.DisplayFor(modelItem => item.Sho.Occasion)</h6>
+                            </div>
+                        </div>
+                        <!--/row-fluid-->
+                    </div>
+                    <!--/item-->
+                    <div class="item ">
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-5 col-md-5">
+                                <a href="http://localhost:63648/Accessories/">
+                                    <img src="@Url.Content(item.Accessory.Photo)" class="thumbnail"
+                                         alt="Image" />
+                                </a>
+                            </div>
+                            <div class="col-xs-6 col-sm-7 col-md-7">
+                                <h4>@Html.DisplayFor(modelItem => item.Accessory.Name)</h4>
+                                <h6>@Html.DisplayFor(modelItem => item.Accessory.Season.Name)</h6>
+                                <h6>@Html.DisplayFor(modelItem => item.Accessory.Occasion)</h6>.
+                            </div>
+                        </div>
+                        <!--/row-fluid-->
+                    </div>
+                    <!--/item-->
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <span data-slide="prev" class="btn-vertical-slider glyphicon glyphicon-circle-arrow-down"
+                              style="color: Black; font-size: 30px"></span>
+                    </div>
+                    <div class="col-md-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = item.OutfitID }) |
+    @Html.ActionLink("Details", "Details", new { id = item.OutfitID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = item.OutfitID })
+</p>
+}
+<script>
+$(document).ready(function () {
+
+    $('.btn-vertical-slider').on('click', function () {
+
+        if ($(this).attr('data-slide') == 'next') {
+            $('#myCarousel').carousel('next');
+        }
+        if ($(this).attr('data-slide') == 'prev') {
+            $('#myCarousel').carousel('prev')
+        }
+
+    });
+});
+</script>
