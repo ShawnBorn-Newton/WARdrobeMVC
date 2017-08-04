@@ -10,7 +10,7 @@
     @Html.ActionLink("Create New", "Create")
 </p>
 @foreach (var item in Model) {
-    <div class="thumbnail">
+    <div class="col-md-4 col-sm-6 thumbnail">
         <img src="@Url.Content(item.Photo)" />
         <h3>
             @Html.DisplayFor(modelItem => item.Name)

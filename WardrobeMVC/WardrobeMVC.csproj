@@ -224,9 +224,10 @@
     <Content Include="Content\Images\PlateTop.jpg" />
     <Content Include="Content\Images\QuiltTop.jpg" />
     <Content Include="Content\Images\SoftLeatherGreaves.jpg" />
+    <Content Include="Content\Images\Squire.png" />
     <Content Include="Content\Images\Sword1.jpg" />
     <Content Include="Content\Images\Sword2.jpg" />
-    <Content Include="Content\JavaScript.js" />
+    <Content Include="Scripts\JavaScript.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

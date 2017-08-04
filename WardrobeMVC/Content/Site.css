@@ -23,6 +23,12 @@ textarea {
     max-width: 280px;
 }
 
+/*Header*/
+.Brand{
+    margin:0px;
+    padding:0px;
+}
+
 /*Carousel*/
 
 .btn-vertical-slider{ margin-left:35px; cursor:pointer;}
