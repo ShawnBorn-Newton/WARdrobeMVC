@@ -97,10 +97,24 @@ a {  cursor:pointer;}
      border:0;
      margin:0px;
      padding:0px;
+     font-family: 'IM Fell DW Pica SC', serif;
  }
 .button{
     background-color:black;
     width:auto;
     text-align:center;
     opacity:.80;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+#headers{
+    color:silver;
+    background-color:black;
+    opacity:.85;
+    width:auto;
+    text-align:center;
+    font-family: 'New Rocker', cursive;
+}
+h3{
+    font-family: 'Amarante', cursive;
+    margin-left:5px;
 }
