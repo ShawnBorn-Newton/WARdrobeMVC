@@ -4,12 +4,12 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2 id="headers">Details</h2>
 
 <div>
-    <h4>Bottom</h4>
+    <h4 class="lettering">Bottom</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal lettering">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
@@ -60,7 +60,7 @@
 
     </dl>
 </div>
-<p>
+<p class="button">
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
